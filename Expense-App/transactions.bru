@@ -1,0 +1,20 @@
+meta {
+  name: transactions
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:5000/api/transactions
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+      "id": 1,
+      "name": "Kashiffffff",
+      "transactionType": "Expense",
+      "amount": 12345
+    }
+}
